@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE5F6D19-5542-40AC-91F7-31585E26BC91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OftenBuild</RootNamespace>
+    <AssemblyName>OftenBuild</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tt.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="App, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lid\App.dll</HintPath>
+    </Reference>
+    <Reference Include="App.Win, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lid\App.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Scripting, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lid\Interop.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NChardet, Version=1.0.2583.41789, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lid\NChardet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lid\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBankBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBankBuild.Designer.cs">
+      <DependentUpon>FrmBankBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pub.cs" />
+    <Compile Include="FrmFareBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFareBuild.Designer.cs">
+      <DependentUpon>FrmFareBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRank.Designer.cs">
+      <DependentUpon>FrmRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdCardAssay.cs" />
+    <Compile Include="BankCard.cs" />
+    <Compile Include="PinyinHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomName.cs" />
+    <Compile Include="RightMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmGuidBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuidBuild.Designer.cs">
+      <DependentUpon>FrmGuidBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCode.Designer.cs">
+      <DependentUpon>FrmCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJson.Designer.cs">
+      <DependentUpon>FrmJson.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmBankBuild.resx">
+      <DependentUpon>FrmBankBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFareBuild.resx">
+      <DependentUpon>FrmFareBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRank.resx">
+      <DependentUpon>FrmRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmGuidBuild.resx">
+      <DependentUpon>FrmGuidBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCode.resx">
+      <DependentUpon>FrmCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJson.resx">
+      <DependentUpon>FrmJson.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hp_customization_control_panel.ico" />
+    <Content Include="lid\App.dll" />
+    <Content Include="lid\App.pdb" />
+    <Content Include="lid\App.Web.dll" />
+    <Content Include="lid\App.Web.pdb" />
+    <Content Include="lid\App.Web.XML" />
+    <Content Include="lid\App.Win.dll" />
+    <Content Include="lid\App.Win.pdb" />
+    <Content Include="lid\App.Win.XML" />
+    <Content Include="lid\App.xml" />
+    <Content Include="lid\Interop.Scripting.dll" />
+    <Content Include="lid\MySql.Data.dll" />
+    <Content Include="lid\NChardet.dll" />
+    <Content Include="lid\Newtonsoft.Json.dll" />
+    <Content Include="lid\Newtonsoft.Json.pdb" />
+    <Content Include="lid\Newtonsoft.Json.xml" />
+    <Content Include="tt.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
